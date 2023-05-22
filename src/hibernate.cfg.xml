@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sistema</property>
+    <property name="hibernate.connection.username">sistema</property>
+    <property name="hibernate.connection.password">sistema</property>
+    <property name="hibernate.current_session_context_class">thread</property>
+    <property name="hibernate.hbm2ddl.auto">validate</property>
+    <mapping class="net.Modelos.Ajuste_stock"/>
+    <mapping class="net.Modelos.Cliente"/>
+    <mapping class="net.Modelos.Control_calidad"/>
+    <mapping class="net.Modelos.Costo_produccion"/>
+    <mapping class="net.Modelos.Det_ajuste_stock"/>
+    <mapping class="net.Modelos.Det_control_calidad"/>
+    <mapping class="net.Modelos.Det_costo_produccion"/>
+    <mapping class="net.Modelos.Det_factura_com"/>
+    <mapping class="net.Modelos.Det_inventario"/>
+    <mapping class="net.Modelos.Det_mermas_produccion"/>
+    <mapping class="net.Modelos.Det_nota_credito"/>
+    <mapping class="net.Modelos.Det_orden_com"/>
+    <mapping class="net.Modelos.Det_orden_produccion"/>
+    <mapping class="net.Modelos.Det_pedido_compra"/>
+    <mapping class="net.Modelos.Det_presupuesto_com"/>
+    <mapping class="net.Modelos.Det_presupuesto_prod"/>
+    <mapping class="net.Modelos.Det_registro_produccion"/>
+    <mapping class="net.Modelos.Det_nota_credito_ven"/>
+    <mapping class="net.Modelos.Factura_com"/>
+    <mapping class="net.Modelos.Inventario"/>
+    <mapping class="net.Modelos.Libroiva"/>
+    <mapping class="net.Modelos.Mermas_produccion"/>
+    <mapping class="net.Modelos.Nota_credito"/>
+    <mapping class="net.Modelos.Orden_com"/>
+    <mapping class="net.Modelos.Orden_produccion"/>
+    <mapping class="net.Modelos.Pedido_compra"/>
+    <mapping class="net.Modelos.Presupuesto_com"/>
+    <mapping class="net.Modelos.Producto"/>
+    <mapping class="net.Modelos.Proveedor"/>
+    <mapping class="net.Modelos.Registro_produccion"/>
+    <mapping class="net.Modelos.Usuario"/>
+    <mapping class="net.Modelos.datos_login"/>
+    <mapping class="net.Modelos.presupuesto_prod"/>
+    <mapping class="net.Modelos.Caja"/>
+    <mapping class="net.Modelos.Det_factura_ven"/>
+    <mapping class="net.Modelos.Factura_ven"/>
+    <mapping class="net.Modelos.Det_orden_serv"/>
+    <mapping class="net.Modelos.Orden_serv"/>
+    <mapping class="net.Modelos.Det_presupuesto_serv"/>
+    <mapping class="net.Modelos.Presupuesto_serv"/>
+    <mapping class="net.Modelos.Det_servicios"/>
+    <mapping class="net.Modelos.Servicios"/>
+    <mapping class="net.Modelos.Diagnostico"/>
+    <mapping class="net.Modelos.Entrega"/>
+    <mapping class="net.Modelos.Libroivaven"/>
+    <mapping class="net.Modelos.Recepcion"/>
+    <mapping class="net.Modelos.Timbrado"/>
+    <mapping class="net.Modelos.Cobros"/>
+    <mapping class="net.Modelos.Nota_credito_ven"/>
+  </session-factory>
+</hibernate-configuration>
