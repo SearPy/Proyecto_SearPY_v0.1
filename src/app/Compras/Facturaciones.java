@@ -128,7 +128,6 @@ public class Facturaciones extends javax.swing.JDialog {
         txtruc = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         txtnroproveedor = new javax.swing.JTextField();
-        jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         txtnroproducto = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
@@ -139,6 +138,11 @@ public class Facturaciones extends javax.swing.JDialog {
         botquitar = new javax.swing.JButton();
         botcancelar = new javax.swing.JButton();
         botsalir = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
+        botquitar1 = new javax.swing.JButton();
 
         Buscar_Pedido.setSize(new java.awt.Dimension(650, 750));
 
@@ -440,9 +444,11 @@ public class Facturaciones extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setModalityType(java.awt.Dialog.ModalityType.DOCUMENT_MODAL);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setText("FACTURACIONES");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 10, 218, -1));
 
         tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -462,8 +468,11 @@ public class Facturaciones extends javax.swing.JDialog {
         });
         jScrollPane1.setViewportView(tabla);
 
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 391, 1074, 122));
+
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel15.setText("TOTAL");
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(874, 539, 61, 35));
 
         txttotal.setEditable(false);
         txttotal.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
@@ -472,23 +481,28 @@ public class Facturaciones extends javax.swing.JDialog {
                 txttotalActionPerformed(evt);
             }
         });
+        getContentPane().add(txttotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(939, 540, 166, 33));
 
         botbuscar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botbuscar.setText("Buscar Factura");
+        botbuscar.setText("Buscar ");
         botbuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botbuscarActionPerformed(evt);
             }
         });
+        getContentPane().add(botbuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 70, 30));
 
         txtnro.setEditable(false);
         txtnro.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtnro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, 100, 30));
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel5.setText("Nro de Factura");
+        jLabel5.setText("Nro");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 50, 30));
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel11.setText("Fecha");
+        jLabel11.setText("Tipo Doc.");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 58, 30));
 
         txtfecha.setEditable(false);
         try {
@@ -498,18 +512,23 @@ public class Facturaciones extends javax.swing.JDialog {
         }
         txtfecha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtfecha.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 90, 99, 30));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel4.setText("Usuario");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 50, 68, 30));
 
         txtusuario.setEditable(false);
         txtusuario.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtusuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, 153, 30));
 
         txtrazonsocial.setEditable(false);
         txtrazonsocial.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtrazonsocial, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 50, 310, 30));
 
         jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel8.setText("Razon Social");
+        jLabel8.setText("Persona");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 50, 50, 30));
 
         txtruc.setEditable(false);
         txtruc.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
@@ -518,27 +537,31 @@ public class Facturaciones extends javax.swing.JDialog {
                 txtrucActionPerformed(evt);
             }
         });
+        getContentPane().add(txtruc, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 90, 180, 30));
 
         jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel7.setText("RUC");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, 50, 30));
 
         txtnroproveedor.setEditable(false);
         txtnroproveedor.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel6.setText("Nro");
+        getContentPane().add(txtnroproveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, 50, 30));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel9.setText("Nro");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 40, 30));
 
         txtnroproducto.setEditable(false);
         txtnroproducto.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtnroproducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 50, 30));
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel10.setText("Descripcion");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 90, 30));
 
         txtdescripcion.setEditable(false);
         txtdescripcion.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtdescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 370, 30));
 
         botnuevo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         botnuevo.setText("Nuevo");
@@ -547,6 +570,7 @@ public class Facturaciones extends javax.swing.JDialog {
                 botnuevoActionPerformed(evt);
             }
         });
+        getContentPane().add(botnuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 340, 86, 33));
 
         botguardar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         botguardar.setText("Guardar");
@@ -555,6 +579,7 @@ public class Facturaciones extends javax.swing.JDialog {
                 botguardarActionPerformed(evt);
             }
         });
+        getContentPane().add(botguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 340, 79, 33));
 
         botanular.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         botanular.setText("Anular");
@@ -563,14 +588,16 @@ public class Facturaciones extends javax.swing.JDialog {
                 botanularActionPerformed(evt);
             }
         });
+        getContentPane().add(botanular, new org.netbeans.lib.awtextra.AbsoluteConstraints(208, 338, 87, 33));
 
         botquitar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botquitar.setText("Quitar");
+        botquitar.setText("Agregar");
         botquitar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botquitarActionPerformed(evt);
             }
         });
+        getContentPane().add(botquitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 340, 87, 35));
 
         botcancelar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         botcancelar.setText("Cancelar");
@@ -579,6 +606,7 @@ public class Facturaciones extends javax.swing.JDialog {
                 botcancelarActionPerformed(evt);
             }
         });
+        getContentPane().add(botcancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 340, -1, 35));
 
         botsalir.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         botsalir.setText("Salir");
@@ -587,125 +615,30 @@ public class Facturaciones extends javax.swing.JDialog {
                 botsalirActionPerformed(evt);
             }
         });
+        getContentPane().add(botsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 340, 69, 35));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(422, 422, 422)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txttotal, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtnroproveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(40, 40, 40)
-                                            .addComponent(txtruc, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGap(10, 10, 10)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(70, 70, 70)
-                                            .addComponent(txtrazonsocial, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(5, 5, 5)
-                                    .addComponent(txtnro, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(18, 18, 18)
-                                    .addComponent(botbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(113, 113, 113)
-                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(2, 2, 2)
-                                    .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(21, 21, 21)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(2, 2, 2)
-                                    .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(txtnroproducto, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGap(70, 70, 70)
-                                            .addComponent(txtdescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(botnuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(7, 7, 7)
-                                    .addComponent(botguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(5, 5, 5)
-                                    .addComponent(botanular, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(493, 493, 493)
-                                    .addComponent(botquitar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addComponent(botcancelar)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(botsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1074, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(133, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtnro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(38, 38, 38)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtnroproveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtruc, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtrazonsocial, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(48, 48, 48)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtnroproducto, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtdescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(botnuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(2, 2, 2)
-                        .addComponent(botguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(botanular, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(botquitar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(botcancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(botsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txttotal, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(99, 99, 99))
-        );
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 130, 100, 30));
+
+        jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel12.setText("Fecha");
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 58, 30));
+
+        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel13.setText("Condicion");
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 130, 58, 30));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 130, 100, 30));
+
+        botquitar1.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botquitar1.setText("Quitar");
+        botquitar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botquitar1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(botquitar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 340, 87, 35));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -812,6 +745,10 @@ public class Facturaciones extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtrucActionPerformed
 
+    private void botquitar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botquitar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_botquitar1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -877,6 +814,7 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JButton botguardar;
     private javax.swing.JButton botnuevo;
     private javax.swing.JButton botquitar;
+    private javax.swing.JButton botquitar1;
     private javax.swing.JButton botsalir;
     private javax.swing.JButton buscarped;
     private javax.swing.JButton buscarpres;
@@ -887,8 +825,12 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JFormattedTextField fechapres;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel27;
@@ -897,7 +839,6 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
