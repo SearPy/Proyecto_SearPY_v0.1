@@ -112,76 +112,33 @@ public class Facturaciones extends javax.swing.JDialog {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        txtnro = new javax.swing.JTextField();
-        botbuscar = new javax.swing.JButton();
-        txtusuario = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        txtfecha = new javax.swing.JFormattedTextField();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel9 = new javax.swing.JLabel();
-        txtnroproducto = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        txtdescripcion = new javax.swing.JTextField();
-        jPanel5 = new javax.swing.JPanel();
-        botnuevo = new javax.swing.JButton();
-        botguardar = new javax.swing.JButton();
-        botsalir = new javax.swing.JButton();
-        botcancelar = new javax.swing.JButton();
-        botquitar = new javax.swing.JButton();
-        botanular = new javax.swing.JButton();
-        txtestado = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        txtruc = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        txtrazonsocial = new javax.swing.JTextField();
-        txtnroproveedor = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
         jLabel15 = new javax.swing.JLabel();
         txttotal = new javax.swing.JTextField();
-        botimprimir = new javax.swing.JButton();
-        jLabel16 = new javax.swing.JLabel();
-        txttotal10 = new javax.swing.JTextField();
-        jLabel17 = new javax.swing.JLabel();
-        txttotal5 = new javax.swing.JTextField();
-        jPanel6 = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
-        txtpedido = new javax.swing.JTextField();
-        botbuscarpedido = new javax.swing.JButton();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        jTextField16 = new javax.swing.JTextField();
-        jLabel20 = new javax.swing.JLabel();
-        jTextField17 = new javax.swing.JTextField();
-        jButton15 = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
-        jTextField18 = new javax.swing.JTextField();
-        jButton16 = new javax.swing.JButton();
-        txtfechapedido = new javax.swing.JFormattedTextField();
-        txtusuariopedido = new javax.swing.JTextField();
-        jPanel8 = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jPanel9 = new javax.swing.JPanel();
-        jLabel23 = new javax.swing.JLabel();
-        jTextField20 = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        jTextField21 = new javax.swing.JTextField();
-        jButton18 = new javax.swing.JButton();
-        jLabel25 = new javax.swing.JLabel();
-        jTextField22 = new javax.swing.JTextField();
-        jButton19 = new javax.swing.JButton();
-        combotipo = new javax.swing.JComboBox<>();
-        jLabel26 = new javax.swing.JLabel();
-        txttimbrado = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        txtfechafac = new javax.swing.JFormattedTextField();
-        botiva = new javax.swing.JButton();
+        botbuscar = new javax.swing.JButton();
+        txtnro = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        txtfecha = new javax.swing.JFormattedTextField();
+        jLabel4 = new javax.swing.JLabel();
+        txtusuario = new javax.swing.JTextField();
+        txtrazonsocial = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        txtruc = new javax.swing.JTextField();
+        jLabel7 = new javax.swing.JLabel();
+        txtnroproveedor = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        txtnroproducto = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        txtdescripcion = new javax.swing.JTextField();
+        botnuevo = new javax.swing.JButton();
+        botguardar = new javax.swing.JButton();
+        botanular = new javax.swing.JButton();
+        botquitar = new javax.swing.JButton();
+        botcancelar = new javax.swing.JButton();
+        botsalir = new javax.swing.JButton();
 
         Buscar_Pedido.setSize(new java.awt.Dimension(650, 750));
 
@@ -487,219 +444,6 @@ public class Facturaciones extends javax.swing.JDialog {
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel2.setText("FACTURACIONES");
 
-        jPanel1.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel1.setLayout(null);
-
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel4.setText("Usuario");
-        jPanel1.add(jLabel4);
-        jLabel4.setBounds(730, 10, 68, 30);
-
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel5.setText("Nro de Factura");
-        jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 10, 135, 30);
-
-        txtnro.setEditable(false);
-        txtnro.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel1.add(txtnro);
-        txtnro.setBounds(150, 10, 112, 30);
-
-        botbuscar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botbuscar.setText("Buscar Factura");
-        botbuscar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botbuscarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(botbuscar);
-        botbuscar.setBounds(280, 10, 157, 30);
-
-        txtusuario.setEditable(false);
-        txtusuario.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel1.add(txtusuario);
-        txtusuario.setBounds(800, 10, 153, 30);
-
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel11.setText("Fecha");
-        jPanel1.add(jLabel11);
-        jLabel11.setBounds(550, 10, 58, 30);
-
-        txtfecha.setEditable(false);
-        try {
-            txtfecha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txtfecha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtfecha.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel1.add(txtfecha);
-        txtfecha.setBounds(610, 10, 99, 30);
-
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Producto", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 14))); // NOI18N
-        jPanel3.setLayout(null);
-
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel9.setText("Nro");
-        jPanel3.add(jLabel9);
-        jLabel9.setBounds(20, 30, 40, 30);
-
-        txtnroproducto.setEditable(false);
-        txtnroproducto.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel3.add(txtnroproducto);
-        txtnroproducto.setBounds(70, 30, 50, 30);
-
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel10.setText("Descripcion");
-        jPanel3.add(jLabel10);
-        jLabel10.setBounds(130, 30, 90, 30);
-
-        txtdescripcion.setEditable(false);
-        txtdescripcion.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel3.add(txtdescripcion);
-        txtdescripcion.setBounds(200, 30, 370, 30);
-
-        jPanel5.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        botnuevo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botnuevo.setText("Nuevo");
-        botnuevo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botnuevoActionPerformed(evt);
-            }
-        });
-
-        botguardar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botguardar.setText("Guardar");
-        botguardar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botguardarActionPerformed(evt);
-            }
-        });
-
-        botsalir.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botsalir.setText("Salir");
-        botsalir.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botsalirActionPerformed(evt);
-            }
-        });
-
-        botcancelar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botcancelar.setText("Cancelar");
-        botcancelar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botcancelarActionPerformed(evt);
-            }
-        });
-
-        botquitar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botquitar.setText("Quitar");
-        botquitar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botquitarActionPerformed(evt);
-            }
-        });
-
-        botanular.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botanular.setText("Anular");
-        botanular.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botanularActionPerformed(evt);
-            }
-        });
-
-        txtestado.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(botnuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
-                .addComponent(botguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(5, 5, 5)
-                .addComponent(botanular, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(110, 110, 110)
-                .addComponent(txtestado, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(157, 157, 157)
-                .addComponent(botquitar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(botcancelar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(botsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(botnuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(botguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtestado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botanular, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel5Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botquitar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botcancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(botsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap())
-        );
-
-        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Proveedor", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 14))); // NOI18N
-        jPanel2.setLayout(null);
-
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel6.setText("Nro");
-        jPanel2.add(jLabel6);
-        jLabel6.setBounds(20, 20, 50, 30);
-
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel7.setText("RUC");
-        jPanel2.add(jLabel7);
-        jLabel7.setBounds(130, 20, 50, 30);
-
-        txtruc.setEditable(false);
-        txtruc.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        txtruc.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtrucActionPerformed(evt);
-            }
-        });
-        jPanel2.add(txtruc);
-        txtruc.setBounds(170, 20, 180, 30);
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel8.setText("Razon Social");
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(360, 20, 80, 30);
-
-        txtrazonsocial.setEditable(false);
-        txtrazonsocial.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel2.add(txtrazonsocial);
-        txtrazonsocial.setBounds(430, 20, 310, 30);
-
-        txtnroproveedor.setEditable(false);
-        txtnroproveedor.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel2.add(txtnroproveedor);
-        txtnroproveedor.setBounds(70, 20, 50, 30);
-        jPanel2.add(jLabel1);
-        jLabel1.setBounds(1090, -120, 52, 900);
-
         tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -729,201 +473,118 @@ public class Facturaciones extends javax.swing.JDialog {
             }
         });
 
-        botimprimir.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botimprimir.setText("Imprimir");
-        botimprimir.addActionListener(new java.awt.event.ActionListener() {
+        botbuscar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botbuscar.setText("Buscar Factura");
+        botbuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botimprimirActionPerformed(evt);
+                botbuscarActionPerformed(evt);
             }
         });
 
-        jLabel16.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel16.setText("IVA 10%");
+        txtnro.setEditable(false);
+        txtnro.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
 
-        txttotal10.setEditable(false);
-        txttotal10.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel5.setText("Nro de Factura");
 
-        jLabel17.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel17.setText("IVA 5%");
+        jLabel11.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel11.setText("Fecha");
 
-        txttotal5.setEditable(false);
-        txttotal5.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-
-        jPanel6.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Orden de Compra", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 14))); // NOI18N
-        jPanel6.setLayout(null);
-
-        jLabel18.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel18.setText("Nro");
-        jPanel6.add(jLabel18);
-        jLabel18.setBounds(20, 30, 40, 30);
-
-        txtpedido.setEditable(false);
-        txtpedido.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel6.add(txtpedido);
-        txtpedido.setBounds(70, 30, 110, 30);
-
-        botbuscarpedido.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        botbuscarpedido.setText("Buscar Orden de Compra");
-        botbuscarpedido.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botbuscarpedidoActionPerformed(evt);
-            }
-        });
-        jPanel6.add(botbuscarpedido);
-        botbuscarpedido.setBounds(200, 30, 180, 30);
-
-        jPanel7.setBackground(new java.awt.Color(153, 153, 255));
-        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Producto", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 14))); // NOI18N
-        jPanel7.setLayout(null);
-
-        jLabel19.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel19.setText("Nro");
-        jPanel7.add(jLabel19);
-        jLabel19.setBounds(20, 30, 40, 30);
-
-        jTextField16.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel7.add(jTextField16);
-        jTextField16.setBounds(70, 30, 50, 30);
-
-        jLabel20.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel20.setText("Descripcion");
-        jPanel7.add(jLabel20);
-        jLabel20.setBounds(130, 30, 90, 30);
-
-        jTextField17.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel7.add(jTextField17);
-        jTextField17.setBounds(210, 30, 370, 30);
-
-        jButton15.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jButton15.setText("Buscar Producto");
-        jPanel7.add(jButton15);
-        jButton15.setBounds(600, 30, 130, 30);
-
-        jLabel21.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel21.setText("Precio");
-        jPanel7.add(jLabel21);
-        jLabel21.setBounds(740, 30, 80, 30);
-
-        jTextField18.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel7.add(jTextField18);
-        jTextField18.setBounds(790, 30, 120, 30);
-
-        jButton16.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jButton16.setText("Agregar Producto");
-        jPanel7.add(jButton16);
-        jButton16.setBounds(930, 30, 130, 30);
-
-        jPanel6.add(jPanel7);
-        jPanel7.setBounds(0, 0, 0, 0);
-
-        txtfechapedido.setEditable(false);
+        txtfecha.setEditable(false);
         try {
-            txtfechapedido.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+            txtfecha.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        txtfechapedido.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtfechapedido.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel6.add(txtfechapedido);
-        txtfechapedido.setBounds(410, 30, 99, 30);
+        txtfecha.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txtfecha.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
 
-        txtusuariopedido.setEditable(false);
-        txtusuariopedido.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel6.add(txtusuariopedido);
-        txtusuariopedido.setBounds(530, 30, 153, 30);
+        jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel4.setText("Usuario");
 
-        jPanel8.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        jPanel8.setLayout(null);
+        txtusuario.setEditable(false);
+        txtusuario.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
 
-        jLabel22.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel22.setText("Timbrado");
-        jPanel8.add(jLabel22);
-        jLabel22.setBounds(20, 90, 80, 30);
+        txtrazonsocial.setEditable(false);
+        txtrazonsocial.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
 
-        jPanel9.setBackground(new java.awt.Color(153, 153, 255));
-        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Producto", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Times New Roman", 1, 14))); // NOI18N
-        jPanel9.setLayout(null);
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel8.setText("Razon Social");
 
-        jLabel23.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel23.setText("Nro");
-        jPanel9.add(jLabel23);
-        jLabel23.setBounds(20, 30, 40, 30);
-
-        jTextField20.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel9.add(jTextField20);
-        jTextField20.setBounds(70, 30, 50, 30);
-
-        jLabel24.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel24.setText("Descripcion");
-        jPanel9.add(jLabel24);
-        jLabel24.setBounds(130, 30, 90, 30);
-
-        jTextField21.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel9.add(jTextField21);
-        jTextField21.setBounds(210, 30, 370, 30);
-
-        jButton18.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jButton18.setText("Buscar Producto");
-        jPanel9.add(jButton18);
-        jButton18.setBounds(600, 30, 130, 30);
-
-        jLabel25.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel25.setText("Precio");
-        jPanel9.add(jLabel25);
-        jLabel25.setBounds(740, 30, 80, 30);
-
-        jTextField22.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel9.add(jTextField22);
-        jTextField22.setBounds(790, 30, 120, 30);
-
-        jButton19.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jButton19.setText("Agregar Producto");
-        jPanel9.add(jButton19);
-        jButton19.setBounds(930, 30, 130, 30);
-
-        jPanel8.add(jPanel9);
-        jPanel9.setBounds(0, 0, 0, 0);
-
-        combotipo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        combotipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Contado", "Credito" }));
-        combotipo.addActionListener(new java.awt.event.ActionListener() {
+        txtruc.setEditable(false);
+        txtruc.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        txtruc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                combotipoActionPerformed(evt);
+                txtrucActionPerformed(evt);
             }
         });
-        jPanel8.add(combotipo);
-        combotipo.setBounds(140, 30, 140, 30);
 
-        jLabel26.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel26.setText("Condicion de pago");
-        jPanel8.add(jLabel26);
-        jLabel26.setBounds(20, 30, 120, 30);
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel7.setText("RUC");
 
-        txttimbrado.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel8.add(txttimbrado);
-        txttimbrado.setBounds(140, 90, 153, 30);
+        txtnroproveedor.setEditable(false);
+        txtnroproveedor.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel3.setText("Fecha de Factura");
-        jPanel8.add(jLabel3);
-        jLabel3.setBounds(20, 140, 90, 30);
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel6.setText("Nro");
 
-        try {
-            txtfechafac.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txtfechafac.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        txtfechafac.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel8.add(txtfechafac);
-        txtfechafac.setBounds(140, 140, 99, 30);
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel9.setText("Nro");
 
-        botiva.setText("LibroIva");
-        botiva.addActionListener(new java.awt.event.ActionListener() {
+        txtnroproducto.setEditable(false);
+        txtnroproducto.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel10.setText("Descripcion");
+
+        txtdescripcion.setEditable(false);
+        txtdescripcion.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+
+        botnuevo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botnuevo.setText("Nuevo");
+        botnuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                botivaActionPerformed(evt);
+                botnuevoActionPerformed(evt);
+            }
+        });
+
+        botguardar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botguardar.setText("Guardar");
+        botguardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botguardarActionPerformed(evt);
+            }
+        });
+
+        botanular.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botanular.setText("Anular");
+        botanular.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botanularActionPerformed(evt);
+            }
+        });
+
+        botquitar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botquitar.setText("Quitar");
+        botquitar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botquitarActionPerformed(evt);
+            }
+        });
+
+        botcancelar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botcancelar.setText("Cancelar");
+        botcancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botcancelarActionPerformed(evt);
+            }
+        });
+
+        botsalir.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        botsalir.setText("Salir");
+        botsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botsalirActionPerformed(evt);
             }
         });
 
@@ -934,97 +595,124 @@ public class Facturaciones extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(botiva)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addComponent(botimprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(txttotal5, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(txttotal10, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(39, 39, 39)
-                                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(txttotal, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane1)
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 759, Short.MAX_VALUE)
-                                        .addComponent(jPanel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 304, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(422, 422, 422)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(144, 144, 144))
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(31, 31, 31)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txttotal, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtnroproveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(10, 10, 10)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(40, 40, 40)
+                                            .addComponent(txtruc, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(10, 10, 10)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(70, 70, 70)
+                                            .addComponent(txtrazonsocial, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(5, 5, 5)
+                                    .addComponent(txtnro, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(botbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(113, 113, 113)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(2, 2, 2)
+                                    .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(21, 21, 21)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(2, 2, 2)
+                                    .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(10, 10, 10)
+                                    .addComponent(txtnroproducto, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(10, 10, 10)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(70, 70, 70)
+                                            .addComponent(txtdescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 370, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(botnuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(7, 7, 7)
+                                    .addComponent(botguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(5, 5, 5)
+                                    .addComponent(botanular, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(493, 493, 493)
+                                    .addComponent(botquitar, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(10, 10, 10)
+                                    .addComponent(botcancelar)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(botsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1074, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(133, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jLabel2)
-                .addGap(42, 42, 42)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txttotal, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txttotal10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(botimprimir, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(txttotal5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnro, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botbuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(38, 38, 38)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnroproveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtruc, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtrazonsocial, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(48, 48, 48)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtnroproducto, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtdescripcion, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(botnuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addComponent(botguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(botanular, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(botquitar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(botcancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(botsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(botiva, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 131, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txttotal, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(99, 99, 99))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtrucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtrucActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtrucActionPerformed
-
-    private void botimprimirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botimprimirActionPerformed
-        try {
-            imprimir();
-        } catch (JRException ex) {
-            Logger.getLogger(Facturaciones.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_botimprimirActionPerformed
-
     private void txttotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttotalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txttotalActionPerformed
-
-    private void combotipoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combotipoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_combotipoActionPerformed
 
     private void agregarpedMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_agregarpedMouseClicked
 
@@ -1069,10 +757,6 @@ public class Facturaciones extends javax.swing.JDialog {
     private void botbuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botbuscarActionPerformed
         buscarPresupuesto();// TODO add your handling code here:
     }//GEN-LAST:event_botbuscarActionPerformed
-
-    private void botbuscarpedidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botbuscarpedidoActionPerformed
-        buscarfactura();        // TODO add your handling code here:
-    }//GEN-LAST:event_botbuscarpedidoActionPerformed
 
     private void botnuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botnuevoActionPerformed
         try {
@@ -1124,9 +808,9 @@ public class Facturaciones extends javax.swing.JDialog {
         libroivam.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void botivaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botivaActionPerformed
-        mostrarlibros();// TODO add your handling code here:
-    }//GEN-LAST:event_botivaActionPerformed
+    private void txtrucActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtrucActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtrucActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1189,11 +873,8 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JButton agregarpres;
     private javax.swing.JButton botanular;
     private javax.swing.JButton botbuscar;
-    private javax.swing.JButton botbuscarpedido;
     private javax.swing.JButton botcancelar;
     private javax.swing.JButton botguardar;
-    private javax.swing.JButton botimprimir;
-    private javax.swing.JButton botiva;
     private javax.swing.JButton botnuevo;
     private javax.swing.JButton botquitar;
     private javax.swing.JButton botsalir;
@@ -1202,35 +883,17 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JButton cancelarped;
     private javax.swing.JButton cancelarpres;
     private javax.swing.JComboBox<String> combolib;
-    private javax.swing.JComboBox<String> combotipo;
     private javax.swing.JFormattedTextField fechaped;
     private javax.swing.JFormattedTextField fechapres;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton15;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1238,48 +901,26 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel11;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane5;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
     private javax.swing.JDialog libroivam;
     private javax.swing.JTable tabla;
     private javax.swing.JTable tablaped;
     private javax.swing.JTable tablapres;
     private javax.swing.JTable tablib;
     private javax.swing.JTextField txtdescripcion;
-    private javax.swing.JLabel txtestado;
     private javax.swing.JFormattedTextField txtfecha;
-    private javax.swing.JFormattedTextField txtfechafac;
-    private javax.swing.JFormattedTextField txtfechapedido;
     private javax.swing.JTextField txtnro;
     private javax.swing.JTextField txtnroproducto;
     private javax.swing.JTextField txtnroproveedor;
-    private javax.swing.JTextField txtpedido;
     private javax.swing.JTextField txtrazonsocial;
     private javax.swing.JTextField txtruc;
-    private javax.swing.JTextField txttimbrado;
     private javax.swing.JTextField txttotal;
-    private javax.swing.JTextField txttotal10;
-    private javax.swing.JTextField txttotal5;
     private javax.swing.JTextField txtusuario;
-    private javax.swing.JTextField txtusuariopedido;
     // End of variables declaration//GEN-END:variables
     private Calendar f;
     private void arranque() throws UnknownHostException{
