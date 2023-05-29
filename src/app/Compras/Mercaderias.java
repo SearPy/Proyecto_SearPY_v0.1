@@ -65,29 +65,28 @@ public class Mercaderias extends javax.swing.JDialog {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         comboinfo2 = new javax.swing.JComboBox<>();
-        jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        txtid = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
-        txtdescripcion = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        txtprecio = new javax.swing.JTextField();
-        jLabel10 = new javax.swing.JLabel();
-        combotipo = new javax.swing.JComboBox<>();
-        comboiva = new javax.swing.JComboBox<>();
-        jPanel3 = new javax.swing.JPanel();
-        nuevo = new javax.swing.JButton();
-        guardar = new javax.swing.JButton();
-        editar = new javax.swing.JButton();
-        eliminar = new javax.swing.JButton();
-        cancelar = new javax.swing.JButton();
-        salir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tab = new javax.swing.JTable();
         informe = new javax.swing.JButton();
+        txtdescripcion = new javax.swing.JTextField();
+        jLabel3 = new javax.swing.JLabel();
+        txtid = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        comboiva = new javax.swing.JComboBox<>();
+        jLabel10 = new javax.swing.JLabel();
+        combotipo = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
+        salir = new javax.swing.JButton();
+        cancelar = new javax.swing.JButton();
+        eliminar = new javax.swing.JButton();
+        editar = new javax.swing.JButton();
+        guardar = new javax.swing.JButton();
+        nuevo = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel9 = new javax.swing.JLabel();
+        combotipo1 = new javax.swing.JComboBox<>();
 
         Informe.setMinimumSize(new java.awt.Dimension(620, 160));
 
@@ -146,166 +145,11 @@ public class Mercaderias extends javax.swing.JDialog {
         setMinimumSize(new java.awt.Dimension(900, 650));
         setModalityType(java.awt.Dialog.ModalityType.DOCUMENT_MODAL);
         setResizable(false);
-
-        jPanel1.setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         jLabel1.setText("Registro de Mercaderias");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(300, 0, 220, 40);
-
-        jPanel2.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.setForeground(new java.awt.Color(102, 102, 102));
-        jPanel2.setLayout(null);
-
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel2.setText("ID");
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(30, 20, 30, 30);
-
-        txtid.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        txtid.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtidActionPerformed(evt);
-            }
-        });
-        jPanel2.add(txtid);
-        txtid.setBounds(60, 20, 40, 30);
-
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel3.setText("DESCRIPCION");
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(120, 20, 90, 30);
-
-        txtdescripcion.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jPanel2.add(txtdescripcion);
-        txtdescripcion.setBounds(210, 20, 300, 30);
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel8.setText("tipo");
-        jPanel2.add(jLabel8);
-        jLabel8.setBounds(30, 80, 120, 30);
-
-        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel9.setText("Precio");
-        jPanel2.add(jLabel9);
-        jLabel9.setBounds(220, 80, 100, 30);
-
-        txtprecio.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        txtprecio.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtprecioActionPerformed(evt);
-            }
-        });
-        jPanel2.add(txtprecio);
-        txtprecio.setBounds(300, 80, 150, 30);
-
-        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel10.setText("IVA");
-        jPanel2.add(jLabel10);
-        jLabel10.setBounds(520, 80, 60, 20);
-
-        combotipo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        combotipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Producto", "Insumo" }));
-        jPanel2.add(combotipo);
-        combotipo.setBounds(80, 80, 120, 30);
-
-        comboiva.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        comboiva.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10%", "5%", "0" }));
-        jPanel2.add(comboiva);
-        comboiva.setBounds(570, 80, 70, 30);
-
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(10, 90, 870, 140);
-
-        jPanel3.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel3.setForeground(new java.awt.Color(102, 102, 102));
-
-        nuevo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        nuevo.setText("NUEVO");
-        nuevo.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                nuevoMouseClicked(evt);
-            }
-        });
-
-        guardar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        guardar.setText("GUARDAR");
-        guardar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                guardarMouseClicked(evt);
-            }
-        });
-
-        editar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        editar.setText("EDITAR");
-        editar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                editarMouseClicked(evt);
-            }
-        });
-
-        eliminar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        eliminar.setText("ELIMINAR");
-        eliminar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                eliminarMouseClicked(evt);
-            }
-        });
-
-        cancelar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        cancelar.setText("CANCELAR");
-        cancelar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cancelarMouseClicked(evt);
-            }
-        });
-
-        salir.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        salir.setText("SALIR");
-        salir.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                salirMouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(nuevo, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(guardar, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(editar, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(eliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(119, 119, 119)
-                .addComponent(cancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(salir, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(126, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(nuevo, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
-                    .addComponent(guardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(editar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(salir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(cancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(eliminar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel3);
-        jPanel3.setBounds(10, 240, 870, 70);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 18, 220, 40));
 
         tab.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         tab.setModel(new javax.swing.table.DefaultTableModel(
@@ -326,8 +170,7 @@ public class Mercaderias extends javax.swing.JDialog {
         });
         jScrollPane1.setViewportView(tab);
 
-        jPanel1.add(jScrollPane1);
-        jScrollPane1.setBounds(10, 320, 870, 210);
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 760, 210));
 
         informe.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         informe.setText("Informe");
@@ -336,22 +179,111 @@ public class Mercaderias extends javax.swing.JDialog {
                 informeActionPerformed(evt);
             }
         });
-        jPanel1.add(informe);
-        informe.setBounds(10, 550, 90, 40);
+        getContentPane().add(informe, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 540, 90, 40));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 950, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 627, Short.MAX_VALUE)
-        );
+        txtdescripcion.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtdescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 70, 300, 30));
+
+        jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel3.setText("DESCRIPCION");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 80, 30));
+
+        txtid.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        txtid.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtidActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtid, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 70, 40, 30));
+
+        jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel2.setText("ID");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, 30, 30));
+
+        comboiva.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        comboiva.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "10%", "5%", "0" }));
+        getContentPane().add(comboiva, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 170, 70, 30));
+
+        jLabel10.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel10.setText("IVA");
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 170, 50, 30));
+
+        combotipo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        combotipo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Producto", "Servicio" }));
+        getContentPane().add(combotipo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 70, 120, 30));
+
+        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel8.setText("TIPO");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 70, 50, 30));
+
+        salir.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        salir.setText("SALIR");
+        salir.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                salirMouseClicked(evt);
+            }
+        });
+        getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 230, 102, 44));
+
+        cancelar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        cancelar.setText("CANCELAR");
+        cancelar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cancelarMouseClicked(evt);
+            }
+        });
+        getContentPane().add(cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 102, 44));
+
+        eliminar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        eliminar.setText("ELIMINAR");
+        eliminar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                eliminarMouseClicked(evt);
+            }
+        });
+        getContentPane().add(eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 91, 44));
+
+        editar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        editar.setText("EDITAR");
+        editar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                editarMouseClicked(evt);
+            }
+        });
+        getContentPane().add(editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 230, 92, 44));
+
+        guardar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        guardar.setText("GUARDAR");
+        guardar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                guardarMouseClicked(evt);
+            }
+        });
+        getContentPane().add(guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 230, 94, 44));
+
+        nuevo.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        nuevo.setText("NUEVO");
+        nuevo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                nuevoMouseClicked(evt);
+            }
+        });
+        getContentPane().add(nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 93, 44));
+
+        jLabel7.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel7.setText("EMBALAJE");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 120, 70, 30));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 120, 30));
+
+        jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel9.setText("ESTADO");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 120, 50, 30));
+
+        combotipo1.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        combotipo1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Producto", "Servicio" }));
+        getContentPane().add(combotipo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 120, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -387,10 +319,6 @@ public class Mercaderias extends javax.swing.JDialog {
     private void tabMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tabMouseClicked
         selecTable();
     }//GEN-LAST:event_tabMouseClicked
-
-    private void txtprecioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtprecioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtprecioActionPerformed
 
     private void informeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_informeActionPerformed
         informe();// TODO add your handling code here:
@@ -456,29 +384,28 @@ public class Mercaderias extends javax.swing.JDialog {
     private javax.swing.JComboBox<String> comboinfo2;
     private javax.swing.JComboBox<String> comboiva;
     private javax.swing.JComboBox<String> combotipo;
+    private javax.swing.JComboBox<String> combotipo1;
     private javax.swing.JButton editar;
     private javax.swing.JButton eliminar;
     private javax.swing.JButton guardar;
     private javax.swing.JButton imprimir;
     private javax.swing.JButton informe;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton nuevo;
     private javax.swing.JButton salir;
     private javax.swing.JTable tab;
     private javax.swing.JTextField txtdescripcion;
     private javax.swing.JTextField txtid;
-    private javax.swing.JTextField txtprecio;
     // End of variables declaration//GEN-END:variables
    
     
