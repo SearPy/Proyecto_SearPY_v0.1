@@ -22,36 +22,32 @@ import javax.persistence.OneToMany;
  * @author Ramc
  */
 @Entity
-public class Control_calidad implements Serializable{
+public class Facturaciones implements Serializable{
     @Id
-    @GeneratedValue (strategy= GenerationType.IDENTITY)
-    private int id_con;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private Calendar fecha;
-    private String estado;
+    private String tipo;
     @ManyToOne
-    private Registro_produccion id_reg;
+    private Personas id_prov;
     @ManyToOne
     private Usuario id_us;
     
-    @OneToMany(mappedBy = "id_con", cascade = CascadeType.ALL)
-    private List<Det_control_calidad> detalles = new ArrayList<>();
+    @OneToMany(mappedBy = "id_fac", cascade = CascadeType.ALL)
+    private List<Facturaciones_det> detalles = new ArrayList<>();
 
-    public Control_calidad() {
+    public Facturaciones() {
     }
 
-    public Control_calidad(Calendar fecha, String estado, Registro_produccion id_reg, Usuario id_us) {
+    public Facturaciones(Calendar fecha, String tipo, Personas id_prov, Usuario id_us) {
         this.fecha = fecha;
-        this.estado = estado;
-        this.id_reg = id_reg;
+        this.tipo = tipo;
+        this.id_prov = id_prov;
         this.id_us = id_us;
     }
 
-    public int getId_con() {
-        return id_con;
-    }
-
-    public void setId_con(int id_con) {
-        this.id_con = id_con;
+    public int getId() {
+        return id;
     }
 
     public Calendar getFecha() {
@@ -62,20 +58,20 @@ public class Control_calidad implements Serializable{
         this.fecha = fecha;
     }
 
-    public String getEstado() {
-        return estado;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setEstado(String estado) {
-        this.estado = estado;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public Registro_produccion getId_reg() {
-        return id_reg;
+    public Personas getId_prov() {
+        return id_prov;
     }
 
-    public void setId_reg(Registro_produccion id_reg) {
-        this.id_reg = id_reg;
+    public void setId_prov(Personas id_prov) {
+        this.id_prov = id_prov;
     }
 
     public Usuario getId_us() {
@@ -86,14 +82,15 @@ public class Control_calidad implements Serializable{
         this.id_us = id_us;
     }
 
-    public List<Det_control_calidad> getDetalles() {
+    public List<Facturaciones_det> getDetalles() {
         return detalles;
     }
 
-    public void setDetalles(List<Det_control_calidad> detalles) {
+    public void setDetalles(List<Facturaciones_det> detalles) {
         this.detalles = detalles;
     }
     
     
+
     
 }

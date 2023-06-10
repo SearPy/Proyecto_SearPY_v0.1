@@ -65,7 +65,6 @@ public class Personas extends javax.swing.JDialog {
         txttelefono = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
         txtdireccion = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtid = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -79,19 +78,14 @@ public class Personas extends javax.swing.JDialog {
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton3 = new javax.swing.JRadioButton();
         jLabel11 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jList1 = new javax.swing.JList<>();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jList2 = new javax.swing.JList<>();
         jLabel4 = new javax.swing.JLabel();
         jRadioButton4 = new javax.swing.JRadioButton();
         jRadioButton5 = new javax.swing.JRadioButton();
         jLabel5 = new javax.swing.JLabel();
         txtruc2 = new javax.swing.JTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(750, 650));
@@ -108,7 +102,7 @@ public class Personas extends javax.swing.JDialog {
                 nuevoMouseClicked(evt);
             }
         });
-        getContentPane().add(nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 478, 93, 44));
+        getContentPane().add(nuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, 93, 44));
 
         guardar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         guardar.setText("GUARDAR");
@@ -117,7 +111,7 @@ public class Personas extends javax.swing.JDialog {
                 guardarMouseClicked(evt);
             }
         });
-        getContentPane().add(guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 478, 94, 44));
+        getContentPane().add(guardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 270, 94, 44));
 
         editar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         editar.setText("EDITAR");
@@ -126,7 +120,7 @@ public class Personas extends javax.swing.JDialog {
                 editarMouseClicked(evt);
             }
         });
-        getContentPane().add(editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 478, 92, 44));
+        getContentPane().add(editar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 270, 92, 44));
 
         eliminar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         eliminar.setText("ELIMINAR");
@@ -135,7 +129,7 @@ public class Personas extends javax.swing.JDialog {
                 eliminarMouseClicked(evt);
             }
         });
-        getContentPane().add(eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 478, 91, 44));
+        getContentPane().add(eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 91, 44));
 
         cancelar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         cancelar.setText("CANCELAR");
@@ -144,7 +138,7 @@ public class Personas extends javax.swing.JDialog {
                 cancelarMouseClicked(evt);
             }
         });
-        getContentPane().add(cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(516, 478, 102, 44));
+        getContentPane().add(cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 270, 102, 44));
 
         salir.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         salir.setText("SALIR");
@@ -153,7 +147,7 @@ public class Personas extends javax.swing.JDialog {
                 salirMouseClicked(evt);
             }
         });
-        getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(626, 478, 102, 44));
+        getContentPane().add(salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 270, 102, 44));
 
         txttelefono.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 90, 150, 30));
@@ -164,10 +158,6 @@ public class Personas extends javax.swing.JDialog {
 
         txtdireccion.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         getContentPane().add(txtdireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 190, 390, 30));
-
-        jLabel8.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel8.setText("BARRIO");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 240, 100, 30));
 
         jLabel2.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel2.setText("ID");
@@ -183,10 +173,10 @@ public class Personas extends javax.swing.JDialog {
 
         jLabel3.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel3.setText("CREDITO");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 60, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 60, -1));
 
         txtruc.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        getContentPane().add(txtruc, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 113, 30));
+        getContentPane().add(txtruc, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 220, 113, 30));
 
         jLabel9.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel9.setText("NOMBRE");
@@ -221,42 +211,9 @@ public class Personas extends javax.swing.JDialog {
         jLabel11.setText("TELEFONO");
         getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 90, 100, 30));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 240, 300, -1));
-
         jLabel12.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel12.setText("DIRECCION");
         getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 120, 30));
-
-        jLabel13.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        jLabel13.setText("DISTRITO");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 280, 100, 30));
-
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        getContentPane().add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 280, 300, -1));
-
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane1.setViewportView(jList1);
-
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 90, 110));
-
-        jList2.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
-        jScrollPane2.setViewportView(jList2);
-
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 90, 110));
 
         jLabel4.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel4.setText("DOCUMENTO");
@@ -276,6 +233,12 @@ public class Personas extends javax.swing.JDialog {
 
         txtruc2.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         getContentPane().add(txtruc2, new org.netbeans.lib.awtextra.AbsoluteConstraints(185, 48, 113, 30));
+
+        jCheckBox1.setText("Cliente");
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+
+        jCheckBox2.setText("Proveedor");
+        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -307,10 +270,6 @@ public class Personas extends javax.swing.JDialog {
     private void txtidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtidActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtidActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -392,28 +351,22 @@ public class Personas extends javax.swing.JDialog {
     private javax.swing.JButton editar;
     private javax.swing.JButton eliminar;
     private javax.swing.JButton guardar;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JList<String> jList1;
-    private javax.swing.JList<String> jList2;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JButton nuevo;
     private javax.swing.JButton salir;
     private javax.swing.JTextField txtdireccion;

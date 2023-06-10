@@ -17,28 +17,31 @@ import javax.persistence.ManyToOne;
  * @author Ramc
  */
 @Entity
-public class Det_pedido_compra implements Serializable{
+public class Facturaciones_det implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private int cantidad;
+    private int precio;
     @ManyToOne
-    private Pedido_compra id_ped;
+    private Mercaderias id_mer;
     @ManyToOne
-    private Producto id_prod;
+    private Facturaciones id_fac;
 
-    public Det_pedido_compra() {
+    public Facturaciones_det() {
     }
 
-    public Det_pedido_compra(int cantidad, Pedido_compra id_ped, Producto id_prod) {
+    public Facturaciones_det(int cantidad, int precio, Mercaderias id_mer, Facturaciones id_fac) {
         this.cantidad = cantidad;
-        this.id_ped = id_ped;
-        this.id_prod = id_prod;
+        this.precio = precio;
+        this.id_mer = id_mer;
+        this.id_fac = id_fac;
     }
 
     public int getId() {
         return id;
     }
+
 
     public int getCantidad() {
         return cantidad;
@@ -48,21 +51,30 @@ public class Det_pedido_compra implements Serializable{
         this.cantidad = cantidad;
     }
 
-    public Pedido_compra getId_ped() {
-        return id_ped;
+    public int getPrecio() {
+        return precio;
     }
 
-    public void setId_ped(Pedido_compra id_ped) {
-        this.id_ped = id_ped;
+    public void setPrecio(int precio) {
+        this.precio = precio;
     }
 
-    public Producto getId_prod() {
-        return id_prod;
+    public Mercaderias getId_mer() {
+        return id_mer;
     }
 
-    public void setId_prod(Producto id_prod) {
-        this.id_prod = id_prod;
+    public void setId_mer(Mercaderias id_mer) {
+        this.id_mer = id_mer;
     }
+
+    public Facturaciones getId_fac() {
+        return id_fac;
+    }
+
+    public void setId_fac(Facturaciones id_fac) {
+        this.id_fac = id_fac;
+    }
+
     
     
 }

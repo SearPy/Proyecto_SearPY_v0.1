@@ -16,40 +16,33 @@ import javax.persistence.Id;
  * @author Ramc
  */
 @Entity
-public class Producto implements Serializable{
+public class Mercaderias implements Serializable{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id_prod;
+    private int id;
     private String descripcion;
     private String tipo;
-    private int precio;
+    private String estado;
+    private String Embalaje;
     private String iva;
     private int stock;
-
-    public Producto() {
-    }
-
-    public Producto(int id_prod, String descripcion, String tipo, int precio, String iva, int stock) {
-        this.id_prod = id_prod;
-        this.descripcion = descripcion;
-        this.tipo = tipo;
-        this.precio = precio;
-        this.iva = iva;
-        this.stock = stock;
-    }
-    
+    private int preciocom;
+    private int precioven;
     
 
-    public Producto(String descripcion, String tipo, int precio, String iva, int stock) {
-        this.descripcion = descripcion;
-        this.tipo = tipo;
-        this.precio = precio;
-        this.iva = iva;
-        this.stock = stock;
+    public Mercaderias() {
     }
 
-    public int getId_prod() {
-        return id_prod;
+    public Mercaderias(String descripcion, String tipo, String estado, String Embalaje, String iva) {
+        this.descripcion = descripcion;
+        this.tipo = tipo;
+        this.estado = estado;
+        this.Embalaje = Embalaje;
+        this.iva = iva;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getDescripcion() {
@@ -68,12 +61,20 @@ public class Producto implements Serializable{
         this.tipo = tipo;
     }
 
-    public int getPrecio() {
-        return precio;
+    public String getEstado() {
+        return estado;
     }
 
-    public void setPrecio(int precio) {
-        this.precio = precio;
+    public void setEstado(String estado) {
+        this.estado = estado;
+    }
+
+    public String getEmbalaje() {
+        return Embalaje;
+    }
+
+    public void setEmbalaje(String Embalaje) {
+        this.Embalaje = Embalaje;
     }
 
     public String getIva() {
@@ -83,14 +84,11 @@ public class Producto implements Serializable{
     public void setIva(String iva) {
         this.iva = iva;
     }
-
-    public int getStock() {
-        return stock;
-    }
-
-    public void setStock(int stock) {
-        this.stock = stock;
-    }
-
+    
+    
+    
+    
+    
+    
     
 }

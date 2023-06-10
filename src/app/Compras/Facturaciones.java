@@ -143,6 +143,8 @@ public class Facturaciones extends javax.swing.JDialog {
         jLabel13 = new javax.swing.JLabel();
         jComboBox2 = new javax.swing.JComboBox<>();
         botquitar1 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        txtdescripcion1 = new javax.swing.JTextField();
 
         Buscar_Pedido.setSize(new java.awt.Dimension(650, 750));
 
@@ -468,11 +470,11 @@ public class Facturaciones extends javax.swing.JDialog {
         });
         jScrollPane1.setViewportView(tabla);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 1074, 122));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 310, 1074, 200));
 
         jLabel15.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         jLabel15.setText("TOTAL");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 470, 61, 35));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 560, 61, 35));
 
         txttotal.setEditable(false);
         txttotal.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
@@ -481,7 +483,7 @@ public class Facturaciones extends javax.swing.JDialog {
                 txttotalActionPerformed(evt);
             }
         });
-        getContentPane().add(txttotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 470, 166, 33));
+        getContentPane().add(txttotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 560, 166, 33));
 
         botbuscar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         botbuscar.setText("Buscar ");
@@ -597,7 +599,7 @@ public class Facturaciones extends javax.swing.JDialog {
                 botquitarActionPerformed(evt);
             }
         });
-        getContentPane().add(botquitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 87, 35));
+        getContentPane().add(botquitar, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 270, 87, 35));
 
         botcancelar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         botcancelar.setText("Cancelar");
@@ -638,7 +640,15 @@ public class Facturaciones extends javax.swing.JDialog {
                 botquitar1ActionPerformed(evt);
             }
         });
-        getContentPane().add(botquitar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 270, 87, 35));
+        getContentPane().add(botquitar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 270, 87, 35));
+
+        jLabel14.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        jLabel14.setText("Precio");
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 270, 50, 30));
+
+        txtdescripcion1.setEditable(false);
+        txtdescripcion1.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
+        getContentPane().add(txtdescripcion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 270, 140, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -831,6 +841,7 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel27;
@@ -854,6 +865,7 @@ public class Facturaciones extends javax.swing.JDialog {
     private javax.swing.JTable tablapres;
     private javax.swing.JTable tablib;
     private javax.swing.JTextField txtdescripcion;
+    private javax.swing.JTextField txtdescripcion1;
     private javax.swing.JFormattedTextField txtfecha;
     private javax.swing.JTextField txtnro;
     private javax.swing.JTextField txtnroproducto;
