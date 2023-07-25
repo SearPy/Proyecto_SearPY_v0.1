@@ -86,6 +86,8 @@ public class Personas extends javax.swing.JDialog {
         txtruc2 = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        tab = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(750, 650));
@@ -240,6 +242,21 @@ public class Personas extends javax.swing.JDialog {
         jCheckBox2.setText("Proveedor");
         getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 180, -1, -1));
 
+        tab.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(tab);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 330, 950, 250));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -367,8 +384,10 @@ public class Personas extends javax.swing.JDialog {
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JRadioButton jRadioButton5;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton nuevo;
     private javax.swing.JButton salir;
+    private javax.swing.JTable tab;
     private javax.swing.JTextField txtdireccion;
     private javax.swing.JTextField txtid;
     private javax.swing.JTextField txtnombre;
