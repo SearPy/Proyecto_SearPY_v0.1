@@ -428,8 +428,6 @@ public class Mercaderias extends javax.swing.JDialog {
     combotipo.setSelectedIndex(-1);
     comboiva.setSelectedIndex(-1);
     comboiva.setEnabled(false);
-    txtprecio.setText(null);
-    txtprecio.setEnabled(false);
     //botones
     nuevo.setEnabled(true);
     guardar.setEnabled(false);
