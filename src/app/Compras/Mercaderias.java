@@ -79,14 +79,13 @@ public class Mercaderias extends javax.swing.JDialog {
         jLabel8 = new javax.swing.JLabel();
         salir = new javax.swing.JButton();
         cancelar = new javax.swing.JButton();
-        eliminar = new javax.swing.JButton();
         editar = new javax.swing.JButton();
         guardar = new javax.swing.JButton();
         nuevo = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         combotipo1 = new javax.swing.JComboBox<>();
-        txtid1 = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
 
         Informe.setMinimumSize(new java.awt.Dimension(620, 160));
 
@@ -234,15 +233,6 @@ public class Mercaderias extends javax.swing.JDialog {
         });
         getContentPane().add(cancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, 102, 44));
 
-        eliminar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        eliminar.setText("ELIMINAR");
-        eliminar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                eliminarMouseClicked(evt);
-            }
-        });
-        getContentPane().add(eliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 91, 44));
-
         editar.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
         editar.setText("EDITAR");
         editar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -282,13 +272,8 @@ public class Mercaderias extends javax.swing.JDialog {
         combotipo1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Activo", "Inactivo" }));
         getContentPane().add(combotipo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 120, 120, 30));
 
-        txtid1.setFont(new java.awt.Font("Times New Roman", 1, 10)); // NOI18N
-        txtid1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtid1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtid1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 70, 30));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 120, 70, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -308,10 +293,6 @@ public class Mercaderias extends javax.swing.JDialog {
     private void editarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_editarMouseClicked
         editar();
     }//GEN-LAST:event_editarMouseClicked
-
-    private void eliminarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_eliminarMouseClicked
-        eliminar();
-    }//GEN-LAST:event_eliminarMouseClicked
 
     private void cancelarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelarMouseClicked
         arranque();
@@ -336,10 +317,6 @@ public class Mercaderias extends javax.swing.JDialog {
             Logger.getLogger(Mercaderias.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_imprimirActionPerformed
-
-    private void txtid1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtid1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtid1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -395,10 +372,10 @@ public class Mercaderias extends javax.swing.JDialog {
     private javax.swing.JComboBox<String> combotipo;
     private javax.swing.JComboBox<String> combotipo1;
     private javax.swing.JButton editar;
-    private javax.swing.JButton eliminar;
     private javax.swing.JButton guardar;
     private javax.swing.JButton imprimir;
     private javax.swing.JButton informe;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
@@ -414,7 +391,6 @@ public class Mercaderias extends javax.swing.JDialog {
     private javax.swing.JTable tab;
     private javax.swing.JTextField txtdescripcion;
     private javax.swing.JTextField txtid;
-    private javax.swing.JTextField txtid1;
     // End of variables declaration//GEN-END:variables
    
     
